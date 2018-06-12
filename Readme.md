@@ -3,6 +3,8 @@ top level package.json
 
 will interact with package.json of child projects using bash.
 
+![umbrella](https://raw.githubusercontent.com/MichaelDimmitt/potentially_dangerout_js_umbrella_application/master/assets/new_umbrella.png)
+
 ## Installation:
 ```
 git clone https://github.com/MichaelDimmitt/potentially_dangerout_js_umbrella_application.git;
