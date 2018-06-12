@@ -1,0 +1,25 @@
+{
+    "name": "js-umbrella-application",
+    "description": "",
+    "version": "1.0.0",
+    "author": "Michael Dimmitt <michaelgdimmitt@gmail.com>",
+    "contributors": [],
+    "repository": {
+        "type": "git",
+        "url": "git://https://github.com/MichaelDimmitt/potentially_dangerout_js_umbrella_application.git"
+    },
+    "bugs": "http://github.com/MichaelDimmitt/potentially_dangerout_js_umbrella_application/issues",
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org"
+    },
+    "dependencies": {},
+    "devDependencies": {},
+    "scripts": {
+        "install": "bash -c 'for d in ./*/; do (cd $d && npm install &>/dev/null &); done;'",
+        "start": "bash -c 'for d in ./*/; do (cd $d && npm start &>/dev/null &); done;'",
+        "stop": "bash -c 'kill $(jobs -p);'",
+        "alternate": "bash -c 'directory=${PWD##*/../}; for d in $directory/*/; do (cd $d && echo $d); done;'",
+        "test": ""
+    },
+    "main": "./server"
+}
